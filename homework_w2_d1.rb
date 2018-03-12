@@ -62,7 +62,7 @@ class Team
     end
   end
 
-  def update_score(match_info)
+  def update_points(match_info)
     return @points += 1 if match_info == "won"
   end
 
@@ -81,16 +81,9 @@ end
 # Start of Extension
 class Library
   attr_reader :books
-  def initialize()
-    @books = [
-      {
-        title: "lord_of_the_rings",
-        rental_details: {
-         student_name: "Jeff",
-         date: "01/12/16"
-        }
-      }
-    ]
+  def initialize(book)
+    @books = []
+    @books.push(book)
   end
 
   def check_book_info_by_title(title)
