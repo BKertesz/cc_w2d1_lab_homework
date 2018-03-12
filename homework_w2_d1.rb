@@ -34,7 +34,7 @@ end
 
 # Start of Part 2
 class Team
-  attr_reader :team_name, :players
+  attr_reader :team_name, :players, :points
   attr_accessor :coach
   def initialize(team_name,players,coach)
     @team_name = team_name
@@ -60,6 +60,15 @@ class Team
 
 end
 # End of Part 2
+# Test code for part 2
+# football = Team.new('Chipmunks',['Bob','Rob','Tim'],'John')
+# football.add_new_player('Todd')
+# p football.players
+# p football.check_if_player('Bob')
+# football.update_score("won")
+# p football.points
+#
+
 # Start of Extension
 class Library
   attr_reader :books
@@ -110,7 +119,7 @@ end
 # End of Extension
 
 # Test code Below
-libary = Library.new()
+# libary = Library.new()
 # p libary.check_book_info_by_title("lord_of_the_rings")
 # p libary.books
 # libary.add_new_book("Alice in Wonderland")
