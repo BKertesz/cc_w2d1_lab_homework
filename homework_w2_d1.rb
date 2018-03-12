@@ -31,6 +31,15 @@ class Student
   end
 end
 # End of Part 1
+# Testing for Part 1
+# balazs = Student.new("Balazs",20)
+# balazs.set_name("Todd")
+# balazs.set_cohort(100)
+# p balazs.get_name
+# p balazs.get_cohort
+# p balazs.talk()
+# p balazs.say_favourite_language("Python")
+
 
 # Start of Part 2
 class Team
