@@ -102,11 +102,20 @@ class Library
     for book in @books
       if book[:title] == title
         book[:rental_details][:student_name] = student
-        book[:rental_details][:date] = data
+        book[:rental_details][:date] = date
       end
     end
   end
 end
 # End of Extension
+
+# Test code Below
+libary = Library.new()
+# p libary.check_book_info_by_title("lord_of_the_rings")
+# p libary.books
+# libary.add_new_book("Alice in Wonderland")
+# # p libary.books
+# libary.update_book_info("Alice in Wonderland",'Jimbo','02/09/1992')
+# p libary.books
 
 # EOF
