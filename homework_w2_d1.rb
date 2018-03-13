@@ -57,9 +57,10 @@ class Team
   end
 
   def check_if_player(player_name)
-    for name in @players
-      return true if name == player_name
-    end
+    # for name in @players
+    #   return true if name == player_name
+    # end
+    return @players.include?(player_name)
   end
 
   def update_points(match_info)
@@ -82,8 +83,7 @@ end
 class Library
   attr_reader :books
   def initialize(book)
-    @books = []
-    @books.push(book)
+    @books = books || []
   end
 
   def check_book_info_by_title(title)
