@@ -83,19 +83,21 @@ end
 class Library
   attr_reader :books
   def initialize(book)
-    @books = books || []
+    @books = book || []
   end
 
   def check_book_info_by_title(title)
     for book in @books
       return book if book[:title] == title
     end
+    return nil
   end
 
   def check_rental_information(title)
     for book in @books
       return book[:rental_details] if book[:title] == title
     end
+    return nil
   end
 
   def add_new_book(title)

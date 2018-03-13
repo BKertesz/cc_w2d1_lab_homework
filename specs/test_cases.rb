@@ -14,7 +14,7 @@ class TestClassCases < Minitest::Test
         }
       }
     ]
-    @library = Library.new(@books[0])
+    @library = Library.new(@books)
   end
 
   def test_get_student_details()
